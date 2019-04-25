@@ -383,3 +383,4 @@ if __name__ == "__main__":
                        args.FrameRate,args.Radius,args.NearestNum,args.PeopleNum)
     data.zzt_GetSelfState()
     data.zzt_GetNearState()
+    print('hahahah')
