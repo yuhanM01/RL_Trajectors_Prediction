@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9423b22-a234-4b65-95ea-31e2159c8845" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/m4_get_direction_experoence.sh" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/m4_make_tfrecord.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m4_make_tfrecord.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m4_get_experience.py" beforeDir="false" afterPath="$PROJECT_DIR$/m4_get_experience.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m4_get_experience.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+            <state relative-caret-position="278">
+              <caret line="44" column="79" lean-forward="true" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -40,7 +42,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/m4_make_tfrecord.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="74" column="62" lean-forward="true" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/m4_make_tfrecord.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m4_get_experoence.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -72,6 +95,8 @@
       <find>PedList</find>
       <find>DataPath</find>
       <find>PeopleNum</find>
+      <find>data_dir</find>
+      <find>file</find>
     </findStrings>
     <replaceStrings>
       <replace>zzt_Pedlist</replace>
@@ -85,6 +110,8 @@
     <setting file="file://$PROJECT_DIR$/m4_GetState.sh" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/yh.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/zzt_GetNearState_File.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/m4_make_tfrecord.sh" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/m4_make_tfrecord.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/m4_get_experoence.sh" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -98,6 +125,8 @@
         <option value="$PROJECT_DIR$/yh.py" />
         <option value="$PROJECT_DIR$/m4_get_direction_experoence.sh" />
         <option value="$PROJECT_DIR$/m4_get_experience.py" />
+        <option value="$PROJECT_DIR$/m4_make_tfrecord.sh" />
+        <option value="$PROJECT_DIR$/m4_make_tfrecord.py" />
       </list>
     </option>
   </component>
@@ -246,7 +275,7 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.23905908" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.15043764" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.23910172" />
       <window_info id="Favorites" order="2" sideWeight="0.5021097" side_tool="true" weight="0.23910172" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,20 +354,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/m4_get_experoence.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/m4_get_experience.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+        <state relative-caret-position="278">
+          <caret line="44" column="79" lean-forward="true" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m4_get_experoence.sh">
+    <entry file="file://$PROJECT_DIR$/m4_make_tfrecord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="404">
+          <caret line="74" column="62" lean-forward="true" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m4_make_tfrecord.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>

@@ -63,8 +63,8 @@ class m4_get_experience:
             file_name = str(idx) + '.txt'
             file_name = os.path.join(DatasetDir, DatasetName, file_name)
             experience = self.m4_DirectionActionExecude(file_name, actions_set)
-            np.savetxt(os.path.join(save_file_path, str(idx)+'_DirectionExperience.txt'), experience, fmt='%.6f')
-            print(os.path.join(save_file_path, str(idx)+'_DirectionExperience.txt'))
+            np.savetxt(os.path.join(save_file_path, str(idx)+'.txt'), experience, fmt='%.6f')
+            print(os.path.join(save_file_path, str(idx)+'.txt'))
         print('Done!')
 
 
@@ -107,8 +107,8 @@ class m4_get_experience:
             file_name = str(idx) + '.txt'
             file_name = os.path.join(DatasetDir, DatasetName, file_name)
             experience = self.m4_VelocityActionExecude(file_name, actions_set)
-            np.savetxt(os.path.join(save_file_path, str(idx)+'_VelocityExperience.txt'), experience, fmt='%.6f')
-            print(os.path.join(save_file_path, str(idx)+'_VelocityExperience.txt'))
+            np.savetxt(os.path.join(save_file_path, str(idx)+'.txt'), experience, fmt='%.6f')
+            print(os.path.join(save_file_path, str(idx)+'.txt'))
         print('Done!')
 
 
