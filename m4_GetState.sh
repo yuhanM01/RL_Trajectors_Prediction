@@ -1,0 +1,11 @@
+python zzt_GetNearState_File.py \
+--DataPath='/home/yang/study/datasetandparam/Predestrain_dataset/non-comp/V-Z' \
+--DataDir='1/' \
+--AlterPath='/home/yang/study/datasetandparam/Predestrain_dataset/non-comp/V-Z' \
+--AlterDir='1_selfstate/' \
+--SavePath='/home/yang/study/datasetandparam/Predestrain_dataset/non-comp/V-Z' \
+--SaveDir='1_nearstate/' \
+--FrameRate=0.033333333 \
+--Radius=3.0 \
+--NearestNum=5 \
+--PeopleNum=26
