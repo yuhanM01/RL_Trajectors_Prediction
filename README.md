@@ -24,4 +24,22 @@
                 --FrameRate=0.033333333 \ 帧率
                 --Radius=3.0 \ 半径3米的人
                 --NearestNum=5 \ 这个参数只能是5
-                --PeopleNum=26 数据集中有多少个行人```` 
+                --PeopleNum=26 数据集中有多少个行人
+                ````  
+        2. 生成经验文件：  
+            这一操作会生成两个文件夹：  
+            1）存储行人`方向经验`的文件夹：`.txt`文件中存储的为[CurrentState, action, m4_Reward, m4_NextState, is_done], 每行[25+1+1+25+1]个数  
+            2）存储行人`速度大小经验`的的文件夹：`.txt`文件中存储的为[CurrentState, action, m4_Reward, m4_NextState, is_done], 每行[25+1+1+25+1]个数  
+            生成方法如下：  
+            举个例子：  
+            
+                python m4_get_experience.py \
+                --DatasetDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 周围状态数据集所在的目录
+                --DatasetName='1_1_nearstate' \ 周围状态数据集的名称
+                --SaveDirecitonDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 保存方向经验数据集所在的目录
+                --SaveDirecitonName='1_1_DirectionExperience' \ 保存方向经验数据集所在的名称
+                --SaveVelocityDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 保存方速度大小验数据集所在的目录
+                --SaveVelocityName='1_1_VelocityExperience' \ 保存方速度大小验数据集所在的名称
+                --num_DirectionAction=180 \
+                --num_VelocityAction=201 \
+                --num_person=26
