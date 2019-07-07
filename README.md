@@ -31,6 +31,7 @@
             1）存储行人`方向经验`的文件夹：`.txt`文件中存储的为[CurrentState, action, m4_Reward, m4_NextState, is_done], 每行[25+1+1+25+1]个数  
             2）存储行人`速度大小经验`的的文件夹：`.txt`文件中存储的为[CurrentState, action, m4_Reward, m4_NextState, is_done], 每行[25+1+1+25+1]个数  
             生成方法如下：  
+            找到[m4_get_experience.sh](https://github.com/yuhanM01/RL_Trajectors_Prediction/blob/master/m4_get_experoence.sh)文件  
             举个例子：  
             
                 python m4_get_experience.py \
@@ -44,7 +45,8 @@
                 --num_VelocityAction=201 \
                 --num_person=26
         3. 转化成`.tfrecoders`  
-        生成方法如下：  
+        生成方法如下：
+        找到[m4_make_tfrecord.sh](https://github.com/yuhanM01/RL_Trajectors_Prediction/blob/master/m4_make_tfrecord.sh)文件    
         举个例子：
             ````
             python m4_make_tfrecord.py \
