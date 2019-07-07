@@ -30,13 +30,13 @@ class tfrecords_maker:
         self.dataset_name = dataset_name
         self.dataset_dir = dataset_dir
 
-    def convert_to_tfrecord(self, tfrecord_path, num_person):
+    def convert_to_tfrecord(self, tfrecord_path, num_person, SenceName):
         if not os.path.exists(tfrecord_path):
             os.makedirs(tfrecord_path)
         for idx in range(1, num_person+1):
             datas = np.loadtxt(os.path.join(self.dataset_dir, self.dataset_name, str(idx) + '.txt'), dtype=np.float32)
 
-            output_file = os.path.join(tfrecord_path, str(idx) + '.tfrecords')
+            output_file = os.path.join(tfrecord_path, str(idx) + '_' + SenceName + '.tfrecords')
             frames = datas.shape[0]
             with tf.python_io.TFRecordWriter(output_file) as record_writer:
                 for index in range(frames):
@@ -50,6 +50,8 @@ class tfrecords_maker:
 
 if __name__ == "__main__":
     parse = argparse.ArgumentParser()
+    parse.add_argument('--SenceName', default='Counterflow_Comp',
+                       help='near state dataset save dir')
     parse.add_argument('--DirectionDatasetDir',default='F:/Pedestrians_Data/Non_Reward/Convection',
                        help='near state dataset save dir')
     parse.add_argument('--DirectionDatasetName', default='Convection1/', help='near state dataset name')
@@ -69,7 +71,7 @@ if __name__ == "__main__":
     args = parse.parse_args()
 
     data = tfrecords_maker(args.DirectionDatasetDir, args.DirectionDatasetName)
-    data.convert_to_tfrecord(os.path.join(args.SaveDirecitonDir, args.SaveDirecitonName), args.num_person)
+    data.convert_to_tfrecord(os.path.join(args.SaveDirecitonDir, args.SaveDirecitonName), args.num_person, args.SenceName)
 
     datav = tfrecords_maker(args.VelocityDatasetDir, args.VelocityDatasetName)
-    datav.convert_to_tfrecord(os.path.join(args.SaveVelocityDir, args.SaveVelocityName), args.num_person)
+    datav.convert_to_tfrecord(os.path.join(args.SaveVelocityDir, args.SaveVelocityName), args.num_person, args.SenceName)

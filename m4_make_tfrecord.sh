@@ -1,4 +1,5 @@
 python m4_make_tfrecord.py \
+--SenceName='Counterflow_Comp' \
 --DirectionDatasetDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \
 --DirectionDatasetName='1_1_DirectionExperience' \
 --SaveDirecitonDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \

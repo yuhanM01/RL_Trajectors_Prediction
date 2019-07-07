@@ -50,13 +50,14 @@
         举个例子：
             ````
             python m4_make_tfrecord.py \
-            --DirectionDatasetDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \
-            --DirectionDatasetName='1_1_DirectionExperience' \
-            --SaveDirecitonDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \
-            --SaveDirecitonName='1_1_DirectionTfrecord' \
-            --VelocityDatasetDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \
-            --VelocityDatasetName='1_1_VelocityExperience' \
-            --SaveVelocityDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \
-            --SaveVelocityName='1_1_VelocityTfrecord' \
+            --SenceName='Counterflow_Comp' \ 场景的名称，因为要将所有场景生成的tfrecord文件拷到同一个文件夹，所以名称要不一样，加个场景名称区分
+            --DirectionDatasetDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 生成的经验数据集.txt的目录
+            --DirectionDatasetName='1_1_DirectionExperience' \ 生成的经验数据集.txt的名称
+            --SaveDirecitonDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 保存生成的tfrecord文件目录
+            --SaveDirecitonName='1_1_DirectionTfrecord' \ 保存生成的tfrecord文件名称
+            --VelocityDatasetDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 生成的经验数据集.txt的目录
+            --VelocityDatasetName='1_1_VelocityExperience' \ 生成的经验数据集.txt的名称
+            --SaveVelocityDir='/home/yang/study/datasetandparam/Predestrain_dataset/comp/counterflow' \ 保存生成的tfrecord文件目录
+            --SaveVelocityName='1_1_VelocityTfrecord' \ 保存生成的tfrecord文件名称
             --num_person=26
             ````
