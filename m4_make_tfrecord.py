@@ -41,7 +41,7 @@ class tfrecords_maker:
             with tf.python_io.TFRecordWriter(output_file) as record_writer:
                 for index in range(frames):
                     example = tf.train.Example(features = tf.train.Features(
-                        feature = {'person_data' : tf.train.Feature(float_list = tf.train.FloatList(value = datas[index].tolist()))
+                        feature = {'person_data' : tf.train.Feature(bytes_list=tf.train.BytesList(value=[datas[index].tostring()]))
                         }))
                     record_writer.write(example.SerializeToString())
 
